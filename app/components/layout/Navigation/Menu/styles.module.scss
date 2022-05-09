@@ -1,0 +1,11 @@
+.menu__container {
+    @apply mb-14 animate-fade;
+
+    .menu__heading {
+        @apply text-gray-500 uppercase text-sm font-semibold pl-layout;
+    }
+
+    .ul {
+
+    }
+}

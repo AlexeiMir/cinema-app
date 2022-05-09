@@ -50,7 +50,82 @@ module.exports = {
 				2: '2',
 				3: '3',
 			},
+			keyframes: {
+				fade: {
+					from: {opacity: 0},
+					to: {opacity: 1}
+				},
+				scaleIn: {
+					'0%': {
+						opacity: 0,
+						transform: 'scale(0.9)',
+					},
+					'50%': {
+						opacity: 0.3
+					},
+					'100%': {
+						opacity: 1,
+						transform: 'scale(1)'
+					}
+				}
+			},
+			animation: {
+				fade: 'fade 0.3s ease-in-out',
+				scaleIn: 'scaleIn 0.35s ease-in-out'
+			}
 		},
 	},
-	plugins: [],
+	plugins: [
+		plugin(({addComponents, theme, addUtilities}) => {
+			addComponents({
+				'.btn-primary': {
+					backgroundColor: primary,
+					color: '#fff',
+					borderRadius: '0.65em',
+					transition: 'background-color .3s ease-in-out',
+					'&:hover': {
+						backgroundColor: '#ff0009',
+					}
+
+				},
+				'.text-link': {
+					textUnderlineOffset: 4,
+					color: 'rgba(255,255,255, .9)',
+					transition: 'text-decoration-color .3s ease-in-out',
+					textDecorationLine: 'underline',
+					textDecorationColor: 'rgba(255,255,255, 0.2)',
+					'&:hover': {
+						textDecorationColor: 'rgba(255,255,255, 0.9)',
+					}
+				},
+				'.air-block': {
+					borderRadius: theme('borderRadius.layout'),
+					backgroundColor: theme('colors.gray.950'),
+					color: theme('colors.white'),
+					boxShadow: theme('boxShadow.lg'),
+				}
+			}),
+			addUtilities({
+				'.text-shadow': {
+					textShadow: '1px 1px rgba)'
+				},
+				'outline-border-none':{
+					outline: 'none',
+					border: 'none'
+				},
+	
+				'flex-center-between': {
+					display: 'flex',
+					alignItems: 'center',
+					justifyContent: 'space-between',
+				},
+	
+				'image-like-bg': {
+					objectPosition: 'center',
+					objectFit: 'cover',
+					pointerEvents: 'none',
+				}
+			})	
+		})
+	],
 };
