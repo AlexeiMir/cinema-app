@@ -1,11 +1,12 @@
 import { FC } from 'react';
 import { Menu } from '../Menu';
+import { GenreMenu } from './genres/GenreMenus';
 import { firstMenu, userMenu } from './menu.data';
-import styles from './styles.module.scss';
 
 const MenuContainer: FC = () => (
-  <div className={styles.menu_container__container}>
+  <div>
     <Menu menu={firstMenu} />
+    <GenreMenu />
     <Menu menu={userMenu} />
   </div>
 );

@@ -1,9 +1,13 @@
 import type { AppProps } from 'next/app';
+import MainProvider from 'providers/MainProvider';
 
-import '../app/asserts/styles/globals.scss';
+import '../app/assets/styles/globals.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
-	return <Component {...pageProps} />;
+	return(
+	<MainProvider>
+		<Component {...pageProps} />;
+	</MainProvider>)
 }
 
 export default MyApp;

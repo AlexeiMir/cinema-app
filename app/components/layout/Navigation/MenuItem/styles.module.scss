@@ -1,4 +1,4 @@
-li {
+.menu_item__li {
     @apply px-8 border-r-4 border-r-transparent transition-colors;
 
     > a {
@@ -6,6 +6,20 @@ li {
 
         > span {
             @apply ml-3 text-lg hover:text-white;
+        }
+        > svg {
+            @apply transition-colors;
+        }
+    }
+
+    &.active {
+        @apply border-r-primary;
+        > a > span {
+            @apply text-white;
+        }
+
+        > a > svg {
+            @apply fill-primary;
         }
     }
 }

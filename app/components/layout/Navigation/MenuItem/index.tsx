@@ -8,7 +8,7 @@ import { MaterialIcon } from '@/components/ui/icons/MaterialIcon';
 
 const MenuItem: FC<{ item: IMenuItem }> = ({ item }) => {
     const { asPath } = useRouter()
-    return <li className={cx({
+    return <li className={cx(styles.menu_item__li,{
         [styles.active]: asPath === item.link
     })}>
         <Link href={item.link}>
