@@ -7,4 +7,4 @@ const Error500 = () => (
     </Meta>
 );
 
-export { Error500 };
+export default Error500;

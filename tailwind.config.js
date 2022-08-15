@@ -109,18 +109,18 @@ module.exports = {
 				'.text-shadow': {
 					textShadow: '1px 1px rgba)'
 				},
-				'outline-border-none':{
+				'.outline-border-none':{
 					outline: 'none',
 					border: 'none'
 				},
 	
-				'flex-center-between': {
+				'.flex-center-between': {
 					display: 'flex',
 					alignItems: 'center',
 					justifyContent: 'space-between',
 				},
 	
-				'image-like-bg': {
+				'.image-like-bg': {
 					objectPosition: 'center',
 					objectFit: 'cover',
 					pointerEvents: 'none',
