@@ -1,7 +1,7 @@
 import { IMenuItem } from './../menu.types';
 import { GenreService } from "@/services/genre/genre.service";
 import { useQuery } from "react-query"
-import { getAdminUrl } from '@/config/url.config';
+import { getAdminUrl } from 'configs/url.config';
 
 export const usePopularGenres = () => {
     const queryData = useQuery(

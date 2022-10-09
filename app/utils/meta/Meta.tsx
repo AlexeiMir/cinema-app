@@ -6,7 +6,7 @@ import { onlyText } from '../string/clearText'
 import { ISeo } from './meta.types'
 
 import logoImage from '@/assets/images/logo.svg'
-import { siteName, titleMerge } from '@/config/seo.config'
+import { siteName, titleMerge } from 'configs/seo.config'
 import { MetaNoIndex } from './MetaNoIndex'
 
 export const Meta: FC<ISeo> = ({

@@ -1,5 +1,5 @@
 import { MaterialIcon } from '@/components/ui/icons/MaterialIcon';
-import { getGenreUrl, getMovieUrl } from '@/config/url.config';
+import { getGenreUrl, getMovieUrl } from 'configs/url.config';
 import { getGenresListEach } from '@/utils/movie/getGenresListEach';
 import Image from 'next/image';
 import Link from 'next/link';

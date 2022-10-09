@@ -1,4 +1,4 @@
-import { accentColor } from '@/config/constants'
+import { accentColor } from 'configs/constants'
 import Head from 'next/head'
 import NextProgressBar from 'nextjs-progressbar'
 import { FC } from 'react'

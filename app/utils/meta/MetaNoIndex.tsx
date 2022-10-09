@@ -1,4 +1,4 @@
-import { titleMerge } from '@/config/seo.config';
+import { titleMerge } from 'configs/seo.config';
 import Head from 'next/head';
 import { FC } from 'react';
 
